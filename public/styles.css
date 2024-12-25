@@ -1,0 +1,116 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Main Container */
+  main#game {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+  }
+
+  #smelling-container #smelling-message{
+    font-size: 23px;
+    font-weight: bold;
+    color:#AA0000;
+    text-align: center;
+  }
+
+  #smelling-container {
+    display: none;  
+    position: relative;
+  
+  }
+  
+  /* Result Section */
+  #result {
+    margin-bottom: 20px; /* Space between result and the game container */
+  }
+  
+  #resultContainer {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  #resultContainer span {
+    color: #007bff;
+  }
+  
+  /* Game Container */
+  #game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the trash bin and trash bag */
+    gap: 20px; /* Space between elements */
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Trash Container (centering trash bin and trash bag) */
+  #trash-container {
+    display: flex;
+    justify-content: center; /* Center the trash bin and trash bag horizontally */
+    align-items: center; /* Center the trash bin and trash bag vertically */
+    gap: 20px; /* Space between the two images */
+    position: relative;
+  }
+  
+  /* Trash Bin and Trash Bag Images */
+  #trashBin img,
+  #trashBag img,
+  #emptyBin img
+  {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  /* Trash Bin */
+  #trashBin {
+    display: flex;
+    justify-content: center; /* Ensure trash bin is centered */
+  }
+  
+  /* Trash Bag */
+  #trashBag {
+    position: absolute; /* Absolute positioning for centering */
+    top: 50%; /* Default center position */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Perfect centering */
+    transition: top 0.5s ease, transform 0.5s ease; /* Smooth animation */
+    margin-top: 80px; /* Remove any margin */
+  }
+  
+  /* Button */
+  #throwButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 80px; /* Space between button and other elements */
+  }
+  
+  #throwButton:hover {
+    background-color: #0056b3;
+  }
+  
